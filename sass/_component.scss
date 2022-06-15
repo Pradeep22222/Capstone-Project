@@ -1,0 +1,647 @@
+// Side Navigation
+
+.side-nav {
+  font-size: 1.8rem;
+  list-style: none;
+  margin-top: 3.5rem;
+  position: fixed;
+
+  &__link:link,
+  &__link:visited {
+    color: var(--color--grey-light-1);
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+  }
+  &__item {
+    position: relative;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: white;
+    // padding-right: 1rem;
+
+    &:not(:last-child) {
+      margin-bottom: 0.5rem;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 20px;
+      background-color: var(--color-primary-purple);
+      transform: scaleY(0);
+      transition: transform 0.3s, width 0.3s 0.3s;
+    }
+  }
+  &__item:hover::before,
+  &__item--active::before {
+    transform: scaleY(1);
+    width: 100%;
+  }
+  &__item:active::before {
+    background-color: var(--color-primary-purple-light);
+  }
+  &__link {
+    display: block;
+    width: 100%;
+  }
+  &__icon {
+    width: 2rem;
+    height: 2rem;
+    margin-right: 0.5rem;
+    fill: currentColor;
+    margin-left: 1rem;
+  }
+}
+.legal {
+  font-size: 1.2rem;
+  color: var(--color-grey-light-4);
+  text-align: center;
+  padding: 2.5 rem;
+}
+///working on title section of main page i.e index
+.title {
+  display: flex;
+  height: 50rem;
+  justify-content: space-between;
+  position: relative;
+  z-index: 100;
+
+  &__title {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    font-weight: bold;
+
+    &-logo {
+      display: flex;
+      align-items: center;
+
+      &--logo {
+        display: inline;
+        height: 15rem;
+        width: 15rem;
+      }
+      &--title {
+        display: inline;
+        font-size: 6rem;
+        line-height: 0.9;
+        word-spacing: 0.5;
+        font-weight: bold;
+        animation: hometitle 2s;
+        color: var(--color-primary-purple);
+        backface-visibility: hidden;
+      }
+    }
+    &-subtitle1 {
+      font-size: 2.5rem;
+      margin: 2rem;
+      margin-bottom: 3rem;
+      animation: homepara 2s;
+      animation-delay: 4s;
+    }
+    &-subtitle2 {
+      font-size: 2.5rem;
+      margin: 2rem 0 3rem 7rem;
+      animation: homepara 2s;
+      animation-delay: 6s;
+    }
+    &-videodiv {
+      &--heading {
+        text-align: center;
+        color: black;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+      }
+      &--video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}
+// Home page Upcoming events Section
+.upcomingevents {
+  background-color: var(--color-primary-orange);
+  padding-bottom: 4rem;
+  &__heading {
+    text-align: center;
+    color: white;
+    font-size: 3rem;
+    padding: 4rem 0 2rem;
+    font-weight: bold;
+  }
+
+  &__contents {
+    margin: 0 auto;
+  }
+  ///Styling banner
+  .banner {
+    height: 35rem;
+    width: 60rem;
+    color: white;
+
+    &.banner-1 {
+      background-image: url(../images/img12.png);
+      background-size: cover;
+    }
+    &.banner-2 {
+      background-image: url(../images/img14.png);
+      background-size: cover;
+    }
+    &__contents-box {
+      height: 35rem;
+      width: 30rem;
+    }
+    &__contents {
+      padding: 18rem 0 1rem 1rem;
+      &.banner__contents-club {
+        background-color: var(--color-primary-green-light-transparent);
+        clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+      }
+      &.banner__contents-teens {
+        background-color: var(--color-primary-orange-light-transparent);
+        clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+      }
+      &.banner__contents-kids {
+        background-color: var(--color-primary-purple-light-transparent);
+        clip-path: polygon(0 0, 50% 50%, 100% 100%, 0 100%);
+      }
+      &-logo {
+        &--img {
+          width: 15rem;
+          height: 7rem;
+
+          &-2 {
+            padding-left: 1.5rem;
+          }
+          &-3 {
+            padding-left: 3rem;
+          }
+        }
+      }
+      &-location {
+        text-transform: uppercase;
+        font-size: 2.2rem;
+      }
+      &-month {
+        text-transform: uppercase;
+        font-size: 2.8rem;
+      }
+      &-day {
+        text-transform: uppercase;
+        font-size: 2.8rem;
+      }
+      &-organiser {
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 200;
+      }
+    }
+  }
+}
+// Home page Why join Social Programs (sayings)
+.whyjoinprograms {
+  color: white;
+  padding: 5rem;
+  background-color: var(--color-primary-green);
+  position: relative;
+
+  &__heading {
+    font-size: 3rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  &__content {
+    text-align: center;
+    padding: 2rem;
+    min-height: 22rem;
+
+    &-sayings {
+      font-size: 2.5rem;
+      color: var(--color-primary-orange-dark);
+    }
+    &-character {
+      font-size: 2rem;
+      color: var(--color-primary-orange-dark);
+      font-style: italic;
+      margin-left: 50rem;
+    }
+  }
+}
+// Home page , why join social programs video
+.videodiv {
+  background-color: var(--color-primary-purple-dark);
+  &__div {
+    position: relative;
+    margin: 0 auto;
+    height: 70rem;
+    width: 100%;
+    @include clearfix;
+
+    &-video {
+      position: absolute;
+      height: 80%;
+      width: 70%;
+      top: 12rem;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      @include clearfix;
+      margin: 0 auto;
+    }
+    &-text {
+      text-align: center;
+      padding-top: 5rem;
+      font-size: 2.5rem;
+      color: white;
+      font-weight: bold;
+    }
+  }
+}
+
+/////////// Social Programs calendar///////////////////
+.calendar {
+  width: 55rem;
+  height: 60rem;
+  background-color: #460c28;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin: 0 auto;
+  color: white;
+  // visibility: hidden;
+}
+
+.month {
+  width: 100%;
+  height: 12rem;
+  background-color: #914d12;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+  text-align: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.month i {
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.month h1 {
+  font-size: 3rem;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+}
+
+.month p {
+  font-size: 1.6rem;
+}
+
+.weekdays {
+  width: 100%;
+  height: 5rem;
+  padding: 0 0.4rem;
+  display: flex;
+  align-items: center;
+}
+
+.weekdays div {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+  width: calc(44.2rem / 7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+.days {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0.2rem;
+}
+
+.days div {
+  font-size: 1.4rem;
+  margin: 0.3rem;
+  width: calc(40.2rem / 7);
+  height: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  transition: background-color 0.2s;
+}
+
+.days div:hover:not(.today) {
+  background-color: #636713;
+  border: 0.2rem solid #777;
+  cursor: pointer;
+}
+
+.prev-date,
+.next-date {
+  opacity: 0.5;
+}
+
+.today {
+  background-color: #636713;
+}
+// Photo Video Gallery
+.mainbody__gallery {
+  padding: 1rem 0 1rem;
+  position: relative;
+  @include clearfix;
+  width: 100%;
+  height: 100%;
+}
+.gallery__images-fade {
+  filter: blur(5px);
+  z-index: -10;
+}
+.openimage {
+  height: 100%;
+  width: 70%;
+  top: 5rem;
+
+  z-index: 5;
+  background-size: cover;
+  position: fixed;
+  top: 5rem;
+  right: 15%;
+  @include clearfix;
+  &__icon {
+    font-size: 4rem;
+    position: absolute;
+    top: 2rem;
+    right: -6rem;
+    color: var(--color-primary-purple);
+    padding: 0.5rem;
+    background: var(--color-primary-orange);
+    transition: background-color, 0.08s;
+    &:hover {
+      cursor: pointer;
+      color: var(--color-primary-orange);
+      background: var(--color-primary-purple);
+    }
+  }
+  &__img {
+    width: 100%;
+    object-fit: cover;
+    margin-left: 10%;
+  }
+}
+.hidden {
+  visibility: hidden;
+}
+.galleryimage__div {
+  background-size: cover;
+
+  &-img {
+    height: 100%;
+    width: 100%;
+    &:hover {
+      cursor: pointer;
+      background-color: var(--color-primary-purple);
+      color: var(--color-primary-orange);
+    }
+  }
+}
+///////FAQ
+.mainbody__faq {
+  background-color: white;
+  overflow: scroll;
+  .faq__first {
+    min-height: 85vh;
+    position: relative;
+    overflow: scroll;
+
+    .faq__section {
+      min-width: 50vw;
+      @include absCenter;
+      .accordion-button-outer {
+        font-size: 2.8rem;
+        color: white;
+        padding: 4rem;
+        text-align: center;
+        background-color: var(--color-primary-purple-light);
+      }
+      .accordion-button-inner {
+        font-size: 2.3rem;
+        padding: 2rem;
+        background-color: var(--color-primary-orange-light);
+        color: white;
+        text-align: left;
+      }
+      .accordion-body {
+        font-size: 2.2rem;
+        padding: 3rem;
+
+        &-inner {
+          background-color: var(--color-primary-green);
+          color: white;
+        }
+      }
+    }
+  }
+  .faq__second {
+    margin: 5rem 2rem 0 3rem;
+    &-question1,
+    &-question2,
+    &-question3,
+    &-p1,
+    &-p2,
+    &-p3,
+    &-p4,
+    &-p5,
+    &-p6,
+    &-p7,
+    &-list {
+      font-size: 2rem;
+    }
+    &-question1,
+    &-question2,
+    &-question3 {
+      font-weight: bold;
+    }
+
+    &-p3,
+    &-p4,
+    &-p5 &-p6,
+    &-list {
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+//// About
+.about {
+  background-color: white;
+  &__headings {
+    padding: 2rem;
+    position: relative;
+
+    &__first {
+      margin-right: 2rem;
+    }
+    &__second {
+      line-height: 2.8rem;
+      margin-left: 30rem;
+    }
+    &__paragraph {
+      font-size: 2rem;
+      padding: 2rem;
+      margin-top: 4rem;
+    }
+  }
+  .services {
+    margin-bottom: 3rem;
+    &__heading {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+
+      margin: 2rem;
+      &-img {
+        width: 22rem;
+        height: 15rem;
+        margin-left: 1rem;
+      }
+      &-description {
+        display: flex;
+        flex-direction: column;
+        margin-left: 2rem;
+
+        &--heading {
+          font-size: 2.5rem;
+          text-decoration: underline;
+          font-weight: bold;
+        }
+        &--description {
+          font-size: 2rem;
+          padding: 0.5rem;
+        }
+      }
+    }
+  }
+  .positiondescription {
+    &__heading {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    &__box {
+      display: flex;
+      align-items: center;
+      padding: 0.5rem;
+      margin-left: 1rem;
+
+      &-imagebox {
+        margin-bottom: 3rem;
+        flex: 2;
+
+        &-img {
+          width: 17rem;
+          height: 17rem;
+          border-radius: 50%;
+          outline: 0.4rem solid var(--color-primary-green);
+        }
+        &-name {
+          font-size: 2rem;
+          font-weight: bold;
+          margin: 1.5rem 0 0 2.5rem;
+        }
+        &-position {
+          font-size: 1.8rem;
+          font-style: italic;
+          margin-left: 3rem;
+          &::before {
+            content: "-";
+          }
+        }
+      }
+      &-description {
+        font-size: 2rem;
+        line-height: 3rem;
+        padding: 0.5rem;
+        margin: -12rem 0 0 2rem;
+      }
+    }
+  }
+}
+//  on contact page
+
+.contact {
+  display: flex;
+  color: white;
+  min-height: 60vh;
+  min-width: 60vw;
+  @include absCenter;
+  outline: 1rem solid var(--color-primary-orange);
+  background-color: var(--color-primary-green);
+  background-image: linear-gradient(
+    110deg,
+    #801649 0%,
+    #801649 60%,
+    transparent 60%,
+    transparent 100%
+  );
+
+  &__information_block {
+    font-size: 1.8rem;
+    position: relative;
+    flex: 2;
+  }
+  &__information_contents {
+    @include absCenter;
+    position: relative;
+    padding-left: 3rem;
+    &-streetaddress,
+    &-postaladdress,
+    &-phone,
+    &-email,
+    &-officehours,
+    &-member--heading {
+      margin-bottom: 2rem;
+    }
+    &-icon {
+      width: 2rem;
+      height: 2rem;
+      margin-right: 0.5rem;
+      fill: currentColor;
+    }
+  }
+  &__background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+  }
+  &__text-block {
+    position: relative;
+    flex: 2;
+  }
+  &__text-text {
+    @include absCenter;
+    font-size: 3rem;
+    font-style: italic;
+    font-weight: bold;
+    border-bottom: 0.5rem solid white;
+  }
+}
+
+/////// Working on the social calendar

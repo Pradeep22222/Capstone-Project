@@ -1,0 +1,50 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@keyframes hometitle {
+  0% {
+    transform: translatex(6rem);
+    color: var(--color-primary-orange);
+  }
+
+  40% {
+    color: var(--color-primary-orange);
+  }
+  50% {
+    color: var(--color-primary-green);
+  }
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  90% {
+    color: var(--color-primary-green);
+  }
+  100% {
+    transform: translate(0);
+
+    color: var(--color-primary-green);
+  }
+}
+@keyframes homepara {
+  0% {
+    opacity: 0;
+    transform: translateY(4rem);
+  }
+
+  100% {
+    transform: translate(0);
+    opacity: 1;
+  }
+}

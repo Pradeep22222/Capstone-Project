@@ -1,0 +1,23 @@
+.container {
+  max-width: 180rem;
+  margin: 3rem auto;
+  min-height: 100rem;
+  background-color: var(--color-grey-light-2);
+  box-shadow: var(--shadow-dark);
+}
+.content {
+  display: flex;
+}
+.sidebar {
+  background-color: var(--color-grey-dark-1);
+  display: flex;
+  flex: 0 0 24%;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mainbody {
+  background-color: #fff;
+  flex: 1;
+  min-height: 100vh;
+  position: relative;
+}
