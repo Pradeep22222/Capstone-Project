@@ -25,6 +25,15 @@ const renderCalendar = () => {
     0
   ).getDay();
 
+  //modify
+
+  const events = [
+    {
+      data: "2020-2-20",
+      link: "http:/.....",
+    },
+  ];
+
   const nextDays = 7 - lastDayIndex - 1;
 
   const months = [
@@ -49,7 +58,9 @@ const renderCalendar = () => {
   let days = "";
 
   for (let x = firstDayIndex; x > 0; x--) {
-    days += `<div class="prev-date">${prevLastDay - x + 1}</div>`;
+    days += `<div class="prev-date">${prevLastDay - x + 1}
+    <a>hgjh</a>
+    </div>`;
   }
 
   for (let i = 1; i <= lastDay; i++) {
@@ -67,6 +78,8 @@ const renderCalendar = () => {
     days += `<div class="next-date">${j}</div>`;
   }
   monthDays.innerHTML = days;
+
+  showEvents();
 };
 
 document.querySelector(".prev").addEventListener("click", () => {
@@ -78,5 +91,10 @@ document.querySelector(".next").addEventListener("click", () => {
   date.setMonth(date.getMonth() + 1);
   renderCalendar();
 });
+
+const showEvents = () => {
+  const daysButton = document.querySelectorAll(".days > div");
+  console.log(daysButton);
+};
 
 renderCalendar();
