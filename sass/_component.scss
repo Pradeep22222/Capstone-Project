@@ -269,20 +269,32 @@
 }
 
 /////////// Social Programs calendar///////////////////
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+  margin: 1rem;
+}
+// calendar
+
 .calendar {
-  width: 55rem;
-  height: 60rem;
-  background-color: #460c28;
-  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
-  margin: 0 auto;
   color: white;
-  // visibility: hidden;
+  width: 95rem;
+  height: 115vh;
+  background-color: #222227;
+  box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  margin: 1rem auto;
 }
 
 .month {
   width: 100%;
-  height: 12rem;
-  background-color: #914d12;
+  height: 12vh;
+  background-color: #167e56;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -310,9 +322,10 @@
 
 .weekdays {
   width: 100%;
-  height: 5rem;
+  height: 5vh;
   padding: 0 0.4rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
@@ -320,7 +333,7 @@
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: 0.1rem;
-  width: calc(44.2rem / 7);
+  width: calc(94.2rem / 7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -331,23 +344,23 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 0.2rem;
+  padding: 0.2vh;
 }
 
 .days div {
   font-size: 1.4rem;
   margin: 0.3rem;
-  width: calc(40.2rem / 7);
-  height: 5rem;
+  width: calc(90.2rem / 7);
+  height: 15vh;
   display: flex;
   justify-content: center;
   align-items: center;
   text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
-  transition: background-color 0.2s;
+  transition: all r 0.2s;
 }
 
 .days div:hover:not(.today) {
-  background-color: #636713;
+  background-color: #262626;
   border: 0.2rem solid #777;
   cursor: pointer;
 }
@@ -358,7 +371,7 @@
 }
 
 .today {
-  background-color: #636713;
+  background-color: #167e56;
 }
 
 // Photo Video Gallery
