@@ -93,7 +93,7 @@ body {
 .sidebar {
   background-color: var(--color-grey-dark-1);
   display: flex;
-  flex: 0 0 24%;
+  flex: 0 0 22%;
   flex-direction: column;
   justify-content: space-between; }
 
@@ -104,7 +104,7 @@ body {
   position: relative; }
 
 .side-nav {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   list-style: none;
   margin-top: 3.5rem;
   position: fixed; }
@@ -114,14 +114,17 @@ body {
     text-transform: uppercase;
     display: flex;
     align-items: center;
-    z-index: 2; }
+    z-index: 2;
+    width: 100%; }
   .side-nav__item {
     position: relative;
     height: 4rem;
     display: flex;
     align-items: center;
     font-weight: bold;
-    color: white; }
+    color: white;
+    padding-right: 1rem;
+    width: 100%; }
     .side-nav__item:not(:last-child) {
       margin-bottom: 0.5rem; }
     .side-nav__item::before {
