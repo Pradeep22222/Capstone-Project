@@ -159,8 +159,7 @@ body {
   display: flex;
   height: 50rem;
   justify-content: space-between;
-  position: relative;
-  z-index: 100; }
+  position: relative; }
   .title__title {
     color: black;
     display: flex;
@@ -185,24 +184,26 @@ body {
     .title__title-subtitle1 {
       font-size: 2.5rem;
       margin: 2rem;
-      margin-bottom: 3rem;
       animation: homepara 2s;
       animation-delay: 4s; }
     .title__title-subtitle2 {
       font-size: 2.5rem;
-      margin: 2rem 0 3rem 7rem;
+      margin: 0 2rem;
       animation: homepara 2s;
       animation-delay: 6s; }
-    .title__title-videodiv--heading {
-      text-align: center;
-      color: black;
-      font-size: 2.5rem;
-      font-weight: bold;
-      margin-bottom: 2rem; }
-    .title__title-videodiv--video {
-      height: 100%;
-      width: 100%;
-      object-fit: cover; }
+    .title__title-videodiv {
+      background-color: var(--color-primary-orange); }
+      .title__title-videodiv--heading {
+        text-align: center;
+        color: white;
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-top: -15rem;
+        padding: 2rem; }
+      .title__title-videodiv--video {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; }
 
 .upcomingevents {
   background-color: var(--color-primary-orange);
@@ -334,7 +335,7 @@ html {
 .month {
   width: 100%;
   height: 12vh;
-  background-color: #167e56;
+  background-color: #d06f1a;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -401,7 +402,10 @@ html {
   opacity: 0.5; }
 
 .today {
-  background-color: #167e56; }
+  background-color: #eaf24f41; }
+
+.link_white {
+  color: white; }
 
 .mainbody__gallery {
   padding: 1rem 0 1rem;
@@ -424,8 +428,8 @@ html {
   z-index: 5;
   background-size: cover;
   position: fixed;
-  top: 5rem;
-  right: 15%; }
+  top: 5.5vh;
+  right: 10vw; }
   .openimage::after {
     content: "";
     display: table;

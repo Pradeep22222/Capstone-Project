@@ -1,22 +1,12 @@
 const date = new Date();
 
 const events = {
-  "22/6/2022": [
-    {
-      name: "event1",
-      link: "lonk ...",
-    },
-    {
-      name: "event",
-      link: "lonk ...",
-    },
-  ],
-  "26/6/2022": [
-    {
-      name: "dancing programme at macquirie park",
-      link: "link ...",
-    },
-  ],
+  // "26/6/2022": [
+  //   {
+  //     name: "dancing programme at macquirie park",
+  //     link: "link ...",
+  //   },
+  // ],
   "19/6/2022": [
     {
       name: "dancing programme at macquirie park",
@@ -26,6 +16,18 @@ const events = {
   "28/6/2022": [
     {
       name: "pk",
+      link: "https://www.facebook.com/",
+    },
+  ],
+  "30/6/2022": [
+    {
+      name: "event example",
+      link: "https://www.facebook.com/",
+    },
+  ],
+  "3/4/2023": [
+    {
+      name: "event example",
       link: "https://www.facebook.com/",
     },
   ],
@@ -101,7 +103,7 @@ const renderCalendar = () => {
     if (hasEvent) {
       for (let i = 0; i < hasEvent.length; i++) {
         msg += `<li>
-        <a href="${hasEvent[i]?.link}" target ="_blank"  >
+        <a href="${hasEvent[i]?.link}" target ="_blank"  class="link_white">
         ${hasEvent[i]?.name}</a></li>`;
       }
     }
