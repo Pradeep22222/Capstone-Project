@@ -1,34 +1,37 @@
 const date = new Date();
 
 const events = {
-  // "26/6/2022": [
+  // "19/6/2022": [
   //   {
   //     name: "dancing programme at macquirie park",
-  //     link: "link ...",
+  //     link: "https://www.instagram.com",
   //   },
   // ],
-  "19/6/2022": [
+  "3/8/2022": [
     {
-      name: "dancing programme at macquirie park",
-      link: "https://www.instagram.com",
+      name: "September Weekly Sessions",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-kids-weekly-september-sessions/",
     },
   ],
-  "28/6/2022": [
+  "10/8/2022": [
     {
-      name: "pk",
-      link: "https://www.facebook.com/",
+      name: "Mountview Alpaca Farm & Pizza",
+      link: " https://www.downsyndrome.org.au/blog/event/dsq-club-teens-gold-coast-september-mountview-alpaca-farm-pizza/",
+    },
+    {
+      name: "Amaze World ",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
     },
   ],
-  "30/6/2022": [
+
+  "24/8/2022": [
     {
-      name: "event example",
-      link: "https://www.facebook.com/",
+      name: "Putt Putt & Lunch",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
     },
-  ],
-  "3/4/2023": [
     {
-      name: "event example",
-      link: "https://www.facebook.com/",
+      name: "carnival of flowers",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
     },
   ],
 };
