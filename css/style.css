@@ -964,13 +964,8 @@ html {
   }
   .openimage {
     display: block;
-    height: 100vh;
-    min-width: 90vw;
     margin-right: 5%;
     margin-top: 0%;
-  }
-  .openimage__img {
-    margin-left: 0%;
   }
 }
 
@@ -1010,8 +1005,13 @@ html {
   .videodiv__div-text {
     font-size: 1.8rem;
   }
+  .openimage {
+    display: block;
+    margin-right: 5%;
+    margin-top: 0%;
+    width: 80vw;
+  }
 }
-
 @media (max-width: 48.5em) {
   .side-nav__item {
     justify-content: center;
@@ -1046,5 +1046,12 @@ html {
     min-width: 9rem;
     padding-left: 0.7rem;
     padding-right: 0.7rem;
+  }
+  .openimage{
+    width:98vw;
+    margin:0 auto;
+  }
+  .openimage__icon{
+    margin-right:1rem;
   }
 }
