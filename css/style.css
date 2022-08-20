@@ -1047,11 +1047,11 @@ html {
     padding-left: 0.7rem;
     padding-right: 0.7rem;
   }
-  .openimage{
-    width:98vw;
-    margin:0 auto;
+  .openimage {
+    width: 98vw;
+    margin: 0 auto;
   }
-  .openimage__icon{
-    margin-right:1rem;
+  .openimage__icon {
+    margin-right: 1rem;
   }
 }
