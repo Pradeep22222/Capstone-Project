@@ -148,6 +148,21 @@
   }
 }
 @media (max-width: 60em) {
+  .title__title-logo--logo {
+    display: inline-block;
+    height: 10rem;
+    width: 10rem;
+  }
+  .title__title-logo--title {
+    font-size: 4rem;
+  }
+  .title__title-subtitle1,
+  .title__title-subtitle1,.title__title-videodiv--heading  {
+    font-size: 1.5rem;
+  }
+  .title__title-videodiv--heading {
+    font-size: 1.5rem;
+  }
   .sidebar_calendar {
     min-width: 95rem;
   }
@@ -155,6 +170,7 @@
     transform: translateX(-10rem);
   }
 }
+
 @media (max-width: 48.5em) {
   .side-nav__icon {
     display: none;
@@ -168,21 +184,27 @@
     padding-left: 0.7rem;
   }
   .side-nav__item-photoGallery {
-    min-width: 11rem;
+    min-width: 10.7rem;
     padding-left: 0.7rem;
   }
   .side-nav__item-faq {
-    min-width: 8rem;
-    padding-left: 2.7rem;
+    max-width: 6rem;
+    padding-left: 0.7rem;
 
     display: inline-block;
   }
   .side-nav__item-about {
-    max-width: 10rem;
-    padding: 0 1rem;
+    max-width: 9rem;
+    padding-left: 0.7rem;
   }
   .side-nav__item-contact {
-    max-width: 5rem;
-    padding-left: 3rem;
+    min-width: 9rem;
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+  }
+}
+@media (max-width:42em){
+  html{
+    font-size:50%;
   }
 }

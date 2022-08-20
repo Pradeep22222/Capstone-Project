@@ -64,13 +64,7 @@
   text-align: center;
   padding: 2.5 rem;
 }
-// working on navbar
-.my-navbar {
-  font-size: 2rem;
-  width: 0%;
-  height: 0%;
-  color: black;
-}
+
 ///working on title section of main page i.e index
 .title {
   display: flex;
@@ -422,7 +416,7 @@ html {
   right: 10vw;
   @include clearfix;
   &__icon {
-    font-size: 4rem;
+    font-size: 3rem;
     position: absolute;
     top: 2rem;
     right: -6rem;
