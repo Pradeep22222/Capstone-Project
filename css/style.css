@@ -592,7 +592,7 @@ html {
 }
 
 .mainbody__faq {
-  background-color: white;
+  background-color: var(--color--grey-light-1);
   overflow: scroll;
 }
 .mainbody__faq .faq__first {
@@ -601,28 +601,28 @@ html {
   overflow: scroll;
 }
 .mainbody__faq .faq__first .faq__section {
-  min-width: 50vw;
+  min-width: 98%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 .mainbody__faq .faq__first .faq__section .accordion-button-outer {
-  font-size: 2.8rem;
+  font-size: 2.3rem;
   color: white;
   padding: 4rem;
   text-align: center;
   background-color: var(--color-primary-purple-light);
 }
 .mainbody__faq .faq__first .faq__section .accordion-button-inner {
-  font-size: 2.3rem;
+  font-size: 2rem;
   padding: 2rem;
   background-color: var(--color-primary-orange-light);
   color: white;
   text-align: left;
 }
 .mainbody__faq .faq__first .faq__section .accordion-body {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   padding: 3rem;
 }
 .mainbody__faq .faq__first .faq__section .accordion-body-inner {
@@ -854,6 +854,18 @@ html {
     font-size: 1.4rem;
   }
 }
+@media (max-width: 86em) {
+  .positiondescription__box-sophie {
+    margin-top:5rem;
+  }
+  .positiondescription__box-imagebox-img{
+    width: 14rem;
+    height: 14rem;
+  }
+ .about .positiondescription__box-description{
+    font-size:1.8rem;
+  }
+}
 
 @media (max-width: 81.5em) {
   .sidebar {
@@ -967,6 +979,14 @@ html {
     margin-right: 5%;
     margin-top: 0%;
   }
+   
+  .positiondescription__box-imagebox-img{
+    width: 17rem;
+    height: 17rem;
+  }
+ .about .positiondescription__box-description{
+    font-size:2rem;
+  }
 }
 
 @media all and (max-width: 60em) {
@@ -989,7 +1009,7 @@ html {
   .upcomingevents__heading {
     font-size: 2rem;
   }
-  .banner__contents-logo--img {
+  /* .banner__contents-logo--img {
     width: 10rem;
     height: 6rem;
   }
@@ -998,7 +1018,7 @@ html {
   }
   .whyjoinprograms__heading {
     font-size: 2.3rem;
-  }
+  } */
   .whyjoinprograms__content-sayings {
     font-size: 2rem;
   }
@@ -1010,6 +1030,43 @@ html {
     margin-right: 5%;
     margin-top: 0%;
     width: 80vw;
+  }
+  /* working on faq */
+  /* .accordion-button-outer{
+    font-size:2rem;
+    padding:3rem;
+  }
+  .accordion-button-inner{
+    font-size:1.8rem;
+    padding:2.5rem;
+
+  }
+  .accordion-body{
+    font-size: 1.5rem;
+    padding:1.8rem;
+
+  } */
+ .about .positiondescription__box-sophie{
+    margin-top:8rem;
+  }
+  .positiondescription__box-imagebox-img{
+    width: 14rem;
+    height: 14rem;
+  }
+ .about .positiondescription__box-description{
+    font-size:1.8rem;
+  }
+}
+@media (max-width: 52em){
+  .about .positiondescription__box-sophie{
+    margin-top:9rem;
+  }
+ .about .positiondescription__box-imagebox-img{
+    width: 14rem;
+    height: 14rem;
+  }
+ .about .positiondescription__box-description{
+    font-size:1.4rem;
   }
 }
 @media (max-width: 48.5em) {
