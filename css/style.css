@@ -751,7 +751,7 @@ html {
   display: flex;
   color: white;
   min-height: 60vh;
-  min-width: 60vw;
+  width: 95%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -766,6 +766,7 @@ html {
     transparent 100%
   );
 }
+
 .contact__information_block {
   font-size: 1.8rem;
   position: relative;
@@ -860,9 +861,9 @@ html {
   .about__headings__paragraph {
     font-size: 1.8rem;
   }
-  .about .services__box-img{
-    width:17rem;
-    height:11rem;
+  .about .services__box-img {
+    width: 17rem;
+    height: 11rem;
   }
   .about .services__box-description--heading {
     font-size: 2rem;
@@ -873,9 +874,9 @@ html {
   .positiondescription__box-sophie {
     margin-top: 5rem;
   }
-  .about .positiondescription__box-imagebox-img{
-    width:14rem;
-    height:14rem;
+  .about .positiondescription__box-imagebox-img {
+    width: 14rem;
+    height: 14rem;
   }
   .about .positiondescription__box-description {
     font-size: 1.8rem;
@@ -900,6 +901,12 @@ html {
   .sidebar {
     display: flex;
     flex: 0 0 25%;
+  }
+  .contact {
+    width: 96%;
+  }
+  .contact__information_contents {
+    padding-left: 1rem;
   }
 }
 
@@ -1000,9 +1007,9 @@ html {
   .about__headings__paragraph {
     font-size: 2rem;
   }
-    .about .services__box-img{
-    width:17rem;
-    height:11rem;
+  .about .services__box-img {
+    width: 17rem;
+    height: 11rem;
   }
   .about .services__box-description--heading {
     font-size: 2.5rem;
@@ -1017,6 +1024,12 @@ html {
   }
   .about .positiondescription__box-description {
     font-size: 2rem;
+  }
+  .contact {
+    width: 95%;
+  }
+  .contact__information_contents {
+    padding-left: 3rem;
   }
 }
 
@@ -1082,9 +1095,9 @@ html {
   .about__headings__paragraph {
     font-size: 1.8rem;
   }
-      .about .services__box-img{
-    width:15rem;
-    height:10rem;
+  .about .services__box-img {
+    width: 15rem;
+    height: 10rem;
   }
   .about .services__box-description--heading {
     font-size: 2.1rem;
@@ -1101,6 +1114,15 @@ html {
   }
   .about .positiondescription__box-description {
     font-size: 1.8rem;
+  }
+}
+@media (max-width: 55em) {
+  .contact {
+    width: 98%;
+    height: 80vh;
+  }
+  .contact__information_contents {
+    padding-left: 1rem;
   }
 }
 @media (max-width: 52em) {
@@ -1124,6 +1146,28 @@ html {
   }
   .about .positiondescription__box-description {
     font-size: 1.4rem;
+  }
+  .mainbody__contact{
+    background-color: #d06f1a;
+  }
+  .contact {
+    height: 70vh;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    background-image: linear-gradient(
+      0deg,
+      #801649 0%,
+      #801649 60%,
+      transparent 60%,
+      transparent 100%
+    );
+  }
+ .contact__information_block{
+  margin:6rem 0 2rem;
+ }
+  .contact__text-text {
+    position: relative;
   }
 }
 @media (max-width: 48.5em) {
