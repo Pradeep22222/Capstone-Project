@@ -668,7 +668,6 @@ html {
   margin-right: 2rem;
 }
 .about__headings__second {
-  line-height: 2.8rem;
   margin-left: 30rem;
 }
 .about__headings__paragraph {
@@ -742,7 +741,7 @@ html {
 }
 .about .positiondescription__box-description {
   font-size: 2rem;
-  line-height: 3rem;
+  line-height: 2.5rem;
   padding: 0.5rem;
   margin: -12rem 0 0 2rem;
 }
@@ -889,7 +888,11 @@ html {
     font-size: 1.3rem;
   }
 }
-
+@media (max-width: 77.5em) {
+  .about__headings__second {
+    margin-left: 10rem;
+  }
+}
 @media (max-width: 77em) {
   .sidebar {
     display: flex;
@@ -911,6 +914,12 @@ html {
 }
 
 @media (max-width: 68em) {
+  .side-nav__item {
+    margin-top: 1rem;
+  }
+  .side-nav__link {
+    padding-bottom: 0.9rem;
+  }
   .side-nav__item-home {
     max-width: 10rem;
   }
@@ -1034,6 +1043,9 @@ html {
 }
 
 @media all and (max-width: 60em) {
+  .side-nav__link {
+    padding-bottom: 0;
+  }
   .title__title-logo--logo {
     display: inline-block;
     height: 10rem;
@@ -1114,6 +1126,7 @@ html {
   }
   .about .positiondescription__box-description {
     font-size: 1.8rem;
+    line-height:1rem;
   }
 }
 @media (max-width: 55em) {
@@ -1131,6 +1144,9 @@ html {
   .about__headings__paragraph {
     font-size: 1.4rem;
   }
+  .about .services__heading {
+    font-size: 2.5rem;
+  }
   .about .services__box-description--heading {
     font-size: 1.8rem;
   }
@@ -1147,10 +1163,11 @@ html {
   .about .positiondescription__box-description {
     font-size: 1.4rem;
   }
-  .mainbody__contact{
+  .mainbody__contact {
     background-color: #d06f1a;
   }
   .contact {
+    outline: none;
     height: 70vh;
     display: flex;
     flex-direction: column-reverse;
@@ -1163,14 +1180,17 @@ html {
       transparent 100%
     );
   }
- .contact__information_block{
-  margin:6rem 0 2rem;
- }
+  .contact__information_block {
+    margin: 6rem 0 2rem;
+  }
   .contact__text-text {
     position: relative;
   }
 }
 @media (max-width: 48.5em) {
+  .about__headings__second {
+    margin-left: 5rem;
+  }
   .side-nav__item {
     justify-content: center;
     align-items: center;
@@ -1212,4 +1232,26 @@ html {
   .openimage__icon {
     margin-right: 1rem;
   }
+}
+@media (max-width: 45.5em) {
+  .about .services__box {
+    margin: 0rem;
+  }
+  .about .services__box-img {
+    width: 10rem;
+    height: 5rem;
+  }
+}
+@media (max-width: 38em) {
+  .about .services__box {
+    display: flex;
+    flex-direction: column;
+  }
+  .about .services__box-img {
+    display: none;
+  }
+  /* .about .positiondescription__box{
+    display: flex;
+    flex-direction: column;
+  } */
 }
