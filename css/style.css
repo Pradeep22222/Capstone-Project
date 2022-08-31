@@ -134,7 +134,7 @@ body {
 .side-nav {
   list-style: none;
   margin-top: 3.5rem;
-  position: fixed;
+  /* position: fixed; */
 }
 .side-nav__link:link,
 .side-nav__link:visited {
@@ -709,6 +709,7 @@ html {
 .about .positiondescription__heading {
   text-align: center;
   font-size: 3.5rem;
+  margin: 4rem;
 }
 .about .positiondescription__box {
   display: flex;
@@ -953,7 +954,7 @@ html {
     justify-content: center;
   }
   .side-nav {
-    position: fixed;
+    /* position: fixed; */
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -1033,6 +1034,7 @@ html {
   }
   .about .positiondescription__box-description {
     font-size: 2rem;
+    line-height: 1;
   }
   .contact {
     width: 95%;
@@ -1041,8 +1043,15 @@ html {
     padding-left: 3rem;
   }
 }
-
+@media all and (max-width: 62em) {
+  .sidebar_calendar {
+    width: 95rem;
+  }
+}
 @media all and (max-width: 60em) {
+  .side-nav__item {
+    padding-bottom: 0.9rem;
+  }
   .side-nav__link {
     padding-bottom: 0;
   }
@@ -1111,11 +1120,13 @@ html {
     width: 15rem;
     height: 10rem;
   }
-  .about .services__box-description--heading {
+  .about .services__box-description-heading {
     font-size: 2.1rem;
+    line-height: 1.5;
   }
-  .about .services__box-description--description {
-    font-size: 1.8rem;
+  .about .positiondescription__box-description {
+    font-size: 2rem;
+    line-height: 2.5rem;
   }
   .about .positiondescription__box-sophie {
     margin-top: 8rem;
@@ -1123,10 +1134,6 @@ html {
   .positiondescription__box-imagebox-img {
     width: 14rem;
     height: 14rem;
-  }
-  .about .positiondescription__box-description {
-    font-size: 1.8rem;
-    line-height:1rem;
   }
 }
 @media (max-width: 55em) {
@@ -1145,13 +1152,10 @@ html {
     font-size: 1.4rem;
   }
   .about .services__heading {
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
   .about .services__box-description--heading {
     font-size: 1.8rem;
-  }
-  .about .services__box-description--description {
-    font-size: 1.4rem;
   }
   .about .positiondescription__box-sophie {
     margin-top: 9rem;
@@ -1160,8 +1164,21 @@ html {
     width: 12rem;
     height: 12rem;
   }
+  .about .positiondescription__box {
+    margin-bottom: 4rem;
+  }
+   .about .positiondescription__box-teagan {
+    margin-bottom: 11rem;
+  }
+  .about .positiondescription__box-brad  {
+    margin-bottom: 17rem;
+  }
+  .about .positiondescription__box-sophie  {
+    margin-bottom: 11rem;
+  }
   .about .positiondescription__box-description {
-    font-size: 1.4rem;
+    font-size: 1.9rem;
+    line-height: 2.3rem;
   }
   .mainbody__contact {
     background-color: #d06f1a;

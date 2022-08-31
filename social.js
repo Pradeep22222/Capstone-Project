@@ -23,7 +23,16 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
     },
   ],
-
+  "27/8/2022": [
+    {
+      name: "check",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
+    },
+    {
+      name: "carnival of flowers",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
+    },
+  ],
   "24/8/2022": [
     {
       name: "Putt Putt & Lunch",
