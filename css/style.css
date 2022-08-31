@@ -406,6 +406,7 @@ body {
 html {
   font-size: 62.5%;
   margin: 1rem;
+  min-width: 95rem;
 }
 
 .calendar {
@@ -1167,13 +1168,13 @@ html {
   .about .positiondescription__box {
     margin-bottom: 4rem;
   }
-   .about .positiondescription__box-teagan {
+  .about .positiondescription__box-teagan {
     margin-bottom: 11rem;
   }
-  .about .positiondescription__box-brad  {
+  .about .positiondescription__box-brad {
     margin-bottom: 17rem;
   }
-  .about .positiondescription__box-sophie  {
+  .about .positiondescription__box-sophie {
     margin-bottom: 11rem;
   }
   .about .positiondescription__box-description {
