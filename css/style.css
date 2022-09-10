@@ -1058,7 +1058,8 @@ html {
 }
 @media all and (max-width: 62em) {
   .sidebar_calendar {
-    width: 95rem;
+    /* width: 95rem; */
+    
   }
 }
 @media all and (max-width: 60em) {
@@ -1178,16 +1179,16 @@ html {
     height: 12rem;
   }
   .about .positiondescription__box {
-    margin-bottom: 4rem;
+    /* margin-bottom: 4rem; */
   }
   .about .positiondescription__box-teagan {
-    margin-bottom: 11rem;
+    /* margin-bottom: 11rem; */
   }
   .about .positiondescription__box-brad {
-    margin-bottom: 17rem;
+    /* margin-bottom: 17rem; */
   }
   .about .positiondescription__box-sophie {
-    margin-bottom: 11rem;
+    /* margin-bottom: 11rem; */
   }
   .about .positiondescription__box-description {
     font-size: 1.9rem;

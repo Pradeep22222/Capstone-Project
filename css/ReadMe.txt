@@ -1,0 +1,1 @@
+This is the website for DownSyndrome Queensland that works for a better quality of life for people with Down syndrome by supporting and strengthening families and promoting positive and realistic images of people with Down syndrome.  
