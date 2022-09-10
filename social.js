@@ -22,6 +22,10 @@ const events = {
       name: "Amaze World ",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
     },
+    {
+      name: "Amaze World ",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
+    },
   ],
   "27/8/2022": [
     {
