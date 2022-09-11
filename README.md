@@ -13,4 +13,5 @@
     * Contains frequently asked question about the organization
 5. About
    * Contains information about the type of events the organization organizes and the staff members.
-6. Has the contact details of the organization
+6. Contact
+   * Has the contact details of the organization
