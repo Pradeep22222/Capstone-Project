@@ -1,12 +1,6 @@
 const date = new Date();
 
 const events = {
-  // "19/6/2022": [
-  //   {
-  //     name: "dancing programme at macquirie park",
-  //     link: "https://www.instagram.com",
-  //   },
-  // ],
   "3/8/2022": [
     {
       name: "September Weekly Sessions",
