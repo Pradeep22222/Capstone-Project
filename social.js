@@ -41,13 +41,13 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
     },
   ],
-  "3/6/2023": [
+  "5/5/2023": [
     {
       name: "September Weekly Sessions",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-kids-weekly-september-sessions/",
     },
   ],
-  "10/6/2023": [
+  "7/5/2023": [
     {
       name: "Mountview Alpaca Farm & Pizza",
       link: " https://www.downsyndrome.org.au/blog/event/dsq-club-teens-gold-coast-september-mountview-alpaca-farm-pizza/",
@@ -61,7 +61,47 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
     },
   ],
-  "24/6/2023": [
+  "14/5/2023": [
+    {
+      name: "check",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
+    },
+    {
+      name: "carnival of flowers",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
+    },
+  ],
+  "22/5/2023": [
+    {
+      name: "Putt Putt & Lunch",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
+    },
+    {
+      name: "carnival of flowers",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
+    },
+  ],
+  "13/6/2023": [
+    {
+      name: "September Weekly Sessions",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-kids-weekly-september-sessions/",
+    },
+  ],
+  "17/6/2023": [
+    {
+      name: "Mountview Alpaca Farm & Pizza",
+      link: " https://www.downsyndrome.org.au/blog/event/dsq-club-teens-gold-coast-september-mountview-alpaca-farm-pizza/",
+    },
+    {
+      name: "Amaze World ",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
+    },
+    {
+      name: "Amaze World ",
+      link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
+    },
+  ],
+  "20/6/2023": [
     {
       name: "check",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
@@ -121,13 +161,13 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
     },
   ],
-  "3/8/2023": [
+  "13/8/2023": [
     {
       name: "September Weekly Sessions",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-kids-weekly-september-sessions/",
     },
   ],
-  "10/8/2023": [
+  "19/8/2023": [
     {
       name: "Mountview Alpaca Farm & Pizza",
       link: " https://www.downsyndrome.org.au/blog/event/dsq-club-teens-gold-coast-september-mountview-alpaca-farm-pizza/",
@@ -141,7 +181,7 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-sunshine-coast-september-amaze-world/",
     },
   ],
-  "24/8/2023": [
+  "26/8/2023": [
     {
       name: "check",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
@@ -151,7 +191,7 @@ const events = {
       link: "https://www.downsyndrome.org.au/blog/event/dsq-club-teens-toowoomba-september-carnival-of-flowers/",
     },
   ],
-  "27/8/2023": [
+  "28/8/2023": [
     {
       name: "Putt Putt & Lunch",
       link: "https://www.downsyndrome.org.au/blog/event/dsq-teens-brisbane-september-putt-putt-lunch/",
